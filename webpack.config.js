@@ -5,7 +5,8 @@ module.exports = {
 	entry: ['webpack-dev-server/client?http://localhost:8080', path.join(__dirname, 'src', 'app-client.js')],
 	output: {
 		path: path.join(__dirname, 'src', 'static', 'js'),
-		filename: 'bundle.js'
+		filename: 'bundle.js',
+		publicPath:  '/static/',
 	},
 	module: {
 		loaders: [{
